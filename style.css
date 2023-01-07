@@ -1,0 +1,83 @@
+body {
+    /* font-family: 'StratosSkyeng'; */
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: #004980;
+}
+
+.app {
+    width: 480px;
+    height: 459px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #C2F5FF;
+    border-radius: 12px;
+}
+
+.title {
+    margin: 0;
+    width: 208px;
+    height: 96px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #004980;
+    padding: 52px 136px;
+}
+.first{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn {
+    width: 98px;
+    height: 98px;
+    /* left: 341px;
+    top: 354px; */
+    background: #FFFFFF;
+    border-radius: 12px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+
+    color: #0080C1;
+    border: none;
+}
+
+.btn1 {
+    margin-right: 24px;
+}
+
+.btn2 {
+    margin-right: 24px;
+}
+
+.btn-green {
+    width: 246px;
+    height: 50px;
+    left: 389px;
+    top: 519px;
+    background: #7AC100;
+    border-radius: 12px;
+    border: none;
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+   
+    color: #FFFFFF;
+    margin-top: 67px;
+}
