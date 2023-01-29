@@ -44,35 +44,36 @@ function renderFirstBlock(container) {
   btnStart.textContent = "Start";
   btnStart.classList.add("btn-green", "btn-start");
 
-
   btnStart.addEventListener("click", (event) => {
     event.preventDefault();
     const selected = document.querySelectorAll(".radio-button");
-    selected.forEach(i => {
-        switch (true) {
-                  case level1.checked:
-                    console.log("Экран игры. 1 уровень");
-                    break;
-                  case level2.checked:
-                    console.log("Экран игры. 2 уровень");
-                    break;
-                  case level3.checked:
-                    console.log("Экран игры. 3 уровень");
-                    break;
-                  default:
-                    console.log("выбор не сделан");
-                    break;
-                }
+    selected.forEach((i) => {
+      switch (true) {
+        case level1.checked:
+          console.log("Экран игры. 1 уровень");
+          // window.application.level = "firstLevel";
+          window.application.renderScreen("firstLevel");
+          break;
+        case level2.checked:
+          console.log("Экран игры. 2 уровень");
+          // window.application.level = "secondLevel";
+          window.application.renderScreen("secondLevel");
+          break;
+        case level3.checked:
+          console.log("Экран игры. 3 уровень");
+          // window.application.level = "thirdLevel";
+          window.application.renderScreen("thirdLevel");
+          break;
+        default:
+          console.log("выбор не сделан");
+          break;
+      }
     });
-});
+  });
   container.appendChild(selectBtn);
   container.appendChild(btnStart);
 }
 window.application.blocks["firstPage"] = renderFirstBlock;
-
-
-
-
 
 //отрисуем наш экран- выведем, то что выше на экран первой страницы
 function renderFirstScreen() {
